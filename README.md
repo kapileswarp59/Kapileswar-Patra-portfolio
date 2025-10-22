@@ -1,73 +1,102 @@
-# Welcome to your Lovable project
+Kapileswar Patra Portfolio
 
-## Project info
+A personal portfolio website to showcase projects, skills, and contact information. Built using React, Vite, TypeScript, Tailwind CSS, Framer Motion, and a Node.js backend for email functionality.
 
-**URL**: https://lovable.dev/projects/885f1c61-aa40-4663-81d1-a3f05634877d
+Table of Contents
 
-## How can I edit this code?
+Demo
 
-There are several ways of editing your application.
+Features
 
-**Use Lovable**
+Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/885f1c61-aa40-4663-81d1-a3f05634877d) and start prompting.
+Project Structure
 
-Changes made via Lovable will be committed automatically to this repo.
+Installation
 
-**Use your preferred IDE**
+Usage
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Contact
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Demo
 
-Follow these steps:
+Add your live demo link here: Portfolio Live
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Features
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Responsive and mobile-friendly design
 
-# Step 3: Install the necessary dependencies.
-npm i
+Animated UI with Framer Motion
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Contact form with email functionality using Node.js and Nodemailer
+
+Social media integration (LinkedIn, GitHub, Email)
+
+Showcase of personal projects and skills
+
+Tech Stack
+
+Frontend: React, Vite, TypeScript, Tailwind CSS, Framer Motion
+
+Backend: Node.js, Express, Nodemailer, CORS
+
+Icons: Lucide React
+
+Project Structure
+portfolio/
+│
+├── public/                  # Static assets like images
+├── src/
+│   ├── components/          # Reusable React components
+│   ├── pages/               # Main pages like Home, About, Contact
+│   ├── hooks/               # Custom hooks
+│   ├── ui/                  # UI components (Button, Input, Textarea)
+│   ├── App.tsx              # Main app file
+│   ├── main.tsx             # React entry point
+│   └── styles/              # CSS / Tailwind config
+├── portfolio-backend/       # Backend folder for email service
+│   ├── server.js            # Express server for contact form
+│   └── package.json
+├── package.json
+├── tsconfig.json
+└── README.md
+
+Installation
+
+Clone the repository
+
+git clone https://github.com/kapileswarp59/Kapileswar-Patra-portfolio.git
+
+
+Install frontend dependencies
+
+cd kapileswar-elevated-main
+npm install
+
+
+Install backend dependencies
+
+cd portfolio-backend
+npm install
+
+Usage
+
+Start the backend server (for contact form)
+
+node server.js
+
+
+Start the frontend development server
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Open your browser and visit http://localhost:8080
 
-**Use GitHub Codespaces**
+Contact
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Email: kapileswarp59@gmail.com
 
-## What technologies are used for this project?
+LinkedIn: Kapileswar Patra
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/885f1c61-aa40-4663-81d1-a3f05634877d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+GitHub: kapileswarp59
