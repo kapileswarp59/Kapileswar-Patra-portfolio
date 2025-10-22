@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark futuristic theme */
+    --background: 210 40% 4%;
+    --foreground: 180 10% 80%;
+
+    --card: 210 35% 8%;
+    --card-foreground: 180 10% 90%;
+
+    --popover: 210 35% 8%;
+    --popover-foreground: 180 10% 90%;
+
+    /* Teal neon accent */
+    --primary: 174 100% 70%;
+    --primary-foreground: 210 40% 4%;
+
+    --secondary: 174 40% 45%;
+    --secondary-foreground: 180 10% 95%;
+
+    --muted: 210 30% 12%;
+    --muted-foreground: 180 10% 60%;
+
+    --accent: 174 100% 70%;
+    --accent-foreground: 210 40% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 25% 15%;
+    --input: 210 25% 15%;
+    --ring: 174 100% 70%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens for portfolio */
+    --glass-bg: 210 35% 8% / 0.4;
+    --glow-primary: 174 100% 70%;
+    --glow-secondary: 174 60% 55%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174 100% 70%), hsl(174 60% 55%));
+    --gradient-dark: linear-gradient(180deg, hsl(210 40% 4%), hsl(210 35% 8%));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(174 100% 70% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(174 100% 70% / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    --sidebar-background: 210 35% 8%;
+    --sidebar-foreground: 180 10% 80%;
+    --sidebar-primary: 174 100% 70%;
+    --sidebar-primary-foreground: 210 40% 4%;
+    --sidebar-accent: 210 30% 12%;
+    --sidebar-accent-foreground: 180 10% 90%;
+    --sidebar-border: 210 25% 15%;
+    --sidebar-ring: 174 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/40 backdrop-blur-xl border border-border/50;
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 20px hsl(var(--glow-primary) / 0.5);
+  }
+  
+  .glow-border {
+    box-shadow: 0 0 20px hsl(var(--glow-primary) / 0.3),
+                inset 0 0 20px hsl(var(--glow-primary) / 0.1);
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+}
